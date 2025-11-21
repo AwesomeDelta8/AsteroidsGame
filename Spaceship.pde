@@ -1,5 +1,5 @@
-class Spaceship extends Floater  
-{   
+class Spaceship extends Floater
+{
   private int scale = 5;
   public Spaceship() {
     myColor = 172;
@@ -14,6 +14,7 @@ class Spaceship extends Floater
       xCorners[i] = orginXCorners[i] * scale;
       yCorners[i] = orginYCorners[i] * scale;
     }
+    myColor = color(237, 140, 65);
   }
   public void setXspeed(int x) {
     myXspeed = x;
@@ -32,5 +33,11 @@ class Spaceship extends Floater
       myCenterX = (int)(Math.random()*501);
       myCenterY = (int)(Math.random()*501);
     }
+  }
+  public int getX() {
+    return (int)myCenterX;
+  }
+  public int getY() {
+    return (int)myCenterY;
   }
 }
