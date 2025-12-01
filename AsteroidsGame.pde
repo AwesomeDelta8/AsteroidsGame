@@ -22,7 +22,6 @@ public void draw()
     arrayRock.get(i).move();
     arrayRock.get(i).show();
     float d = dist(bob.getX(), bob.getY(), arrayRock.get(i).getX(),arrayRock.get(i).getY());
-    System.out.println(d);
     if (d<50){
       arrayRock.remove(i);
     }
